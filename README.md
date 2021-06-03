@@ -2,8 +2,9 @@
 
 Project on Node.js GULP
 
+Install dependencies
+npm i
+
 
 start ---
-
-npm i
 gulp
