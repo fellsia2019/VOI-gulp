@@ -2,7 +2,7 @@
 
 Project on Node.js GULP
 
-Install dependencies
+Install dependencies ---
 npm i
 
 
