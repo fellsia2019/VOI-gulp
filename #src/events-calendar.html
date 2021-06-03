@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC</title>
+    <link rel="stylesheet" href="css/style.min.css">
+<body>
+@@include('_svg_incloud.html')
+
+<div id="wrapper" class="wrapper">
+  <div class="wrapper-header gradient-bg gradient-bg--md">
+    @@include('_header.html')
+    <div class="container">
+      <div class="wrapper-breadcrumbs wrapper-breadcrumbs--main">
+        <a href="@@url_lvl2" class="breadcrumbs-mob link">
+          На предыдущую страницу
+        </a>
+        <h1 class="title-page title-main color-main tt-upercase">
+          Календарь мероприятий
+        </h1>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li>
+              <a href="/">
+                Главная
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Мероприятия
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Календарь мероприятий
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-body wrapper-body--page">
+    <section class="wrapper-content wrapper-content--detail">
+      <div class="container">
+        <div class="news">
+          <div class="filter news-filter">
+            <div class="filter-selects">
+              <div class="filter-select">
+                <h3 class="filter-select__title title-sm color-secondary">
+                  Год
+                </h3>
+                <div class="filter-select__item select2-news-filter">
+                  <select
+                    name="select2"
+                    id="select2"
+                    class="select2-custom"
+                  >
+                    <option value="2019">2019</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                </select>
+                </div>
+              </div>
+              <div class="filter-select">
+                <h3 class="filter-select__title title-sm color-secondary">
+                  Тип
+                </h3>
+                <div class="filter-select__item select2-news-filter">
+                  <select
+                    name="select2-1"
+                    id="select2-1"
+                    class="select2-custom"
+                  >
+                    <option value="Фото">Фото</option>
+                    <option value="Видео">Видео</option>
+                    <option value="Новости">Новости</option>
+                    <option value="Фото">Фото</option>
+                    <option value="Видео">Видео</option>
+                    <option value="Новости">Новости</option>
+                </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calendar">
+            <div class="calendar-item">
+              <div class="calendar-img">
+                <img src="./img/photo/20.png" alt="Межрегиональная Спартакиада среди инвалидов СПОДА ВОИ УФО" class="calendar-img__item">
+              </div>
+              <div class="calendar-info">
+                <div class="calendar-info__wrap">
+                  <time class="calendar-info__date">
+                    <p class="calendar-info__date-main title-main">
+                      21
+                    </p>
+                    <p class="calendar-info__date-sec title-sm">
+                      декабря
+                      2020
+                    </p>
+                  </time>
+                </div>
+                <h3 class="calendar-info__title title-nr">
+                  Межрегиональная Спартакиада среди инвалидов СПОДА ВОИ УФО
+                </h3>
+                <p class="calendar-info__txt">
+                  <a href="#" class="calendar-info__local link-local color-light" target="_blank">
+                    <svg class="link-local__svg">
+                      <use xlink:href="#local"></use>
+                    </svg>
+                    <span class="link-local__text text-nr">
+                      Тюменская область, г. Тюмень
+                    </span>
+                  </a>
+                </p>
+                <p class="calendar-info__txt">
+                  <a href="#" class="calendar-info__link link-primary title-xsm">
+                    Подробнее
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="calendar-item calendar-item--left-after">
+              <div class="calendar-info">
+                <div class="calendar-info__wrap">
+                  <time class="calendar-info__date">
+                    <p class="calendar-info__date-main title-main">
+                      03
+                    </p>
+                    <p class="calendar-info__date-sec title-sm">
+                      декабря
+                      2020
+                    </p>
+                  </time>
+                </div>
+                <h3 class="calendar-info__title title-nr">
+                  Международный творческий конкурс «Филантроп»
+                  Подведение итогов
+                </h3>
+                <p class="calendar-info__txt">
+                  <a href="#" class="calendar-info__local link-local color-light" target="_blank">
+                    <svg class="link-local__svg">
+                      <use xlink:href="#local"></use>
+                    </svg>
+                    <span class="link-local__text text-nr">
+                      Тг. Москва
+                    </span>
+                  </a>
+                </p>
+                <p class="calendar-info__txt">
+                  <a href="#" class="calendar-info__link link-primary title-xsm">
+                    Подробнее
+                  </a>
+                </p>
+              </div>
+              <div class="calendar-img">
+                <img src="./img/events/events-card/2.png" alt=" Международный творческий конкурс «Филантроп» Подведение итогов" class="calendar-img__item">
+              </div>
+            </div>
+            <div class="calendar-item">
+              <div class="calendar-img">
+                <img src="./img/events/events-card/3.png" alt="Социальный туризм для членов ВОИ" class="calendar-img__item">
+              </div>
+              <div class="calendar-info">
+                <div class="calendar-info__wrap">
+                  <time class="calendar-info__date">
+                    <p class="calendar-info__date-main title-main">
+                      26
+                    </p>
+                    <p class="calendar-info__date-sec title-sm">
+                      июля
+                      2020
+                    </p>
+                  </time>
+                  <span class="separator">
+                  </span>
+                  <time class="calendar-info__date">
+                    <p class="calendar-info__date-main title-main">
+                      20
+                    </p>
+                    <p class="calendar-info__date-sec title-sm">
+                      декабря
+                      2020
+                    </p>
+                  </time>
+                </div>
+                <h3 class="calendar-info__title title-nr">
+                  Социальный туризм для членов ВОИ
+                </h3>
+                <p class="calendar-info__txt">
+                  <a href="#" class="calendar-info__local link-local color-light" target="_blank">
+                    <svg class="link-local__svg">
+                      <use xlink:href="#local"></use>
+                    </svg>
+                    <span class="link-local__text text-nr">
+                      Московская обасть, Пушкинский район, 
+                      г. Пушкино
+                    </span>
+                  </a>
+                </p>
+                <p class="calendar-info__txt">
+                  <a href="#" class="calendar-info__link link-primary title-xsm">
+                    Подробнее
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  @@include('_footer.html')
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

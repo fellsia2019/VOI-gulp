@@ -1,0 +1,15 @@
+// .separator
+
+.separator{
+  position: relative;
+  display: block;
+  width: 20px;
+  min-width: 20px;
+  height: 3px;
+  background-color: $primaryText-color;
+  @media(max-width: $smDesktopWidth) {
+    height: 1px;
+    min-width: 15px;
+    width: 15px;
+  }
+}

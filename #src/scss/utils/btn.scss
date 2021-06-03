@@ -1,0 +1,49 @@
+// .btn
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  user-select: none;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border-width: 2px;
+  border-radius: 2px;
+  border-style: solid;
+  cursor: pointer;
+  white-space: nowrap;
+  // .btn-md
+  &-md{
+    padding: 12px 32px;
+    height: 48px;
+  }
+
+   // .btn-sm
+   &-sm{
+    padding: 4px 12px;
+    height: 32px;
+  }
+
+  // .btn-white
+  &-white{
+    border-color: $primary-color;
+    color: $primary-color;
+    background-color: transparent;
+    &:hover{
+      color: $default-color;
+      background-color: $primary-color;
+    }
+  }
+
+  // .btn-primary
+  &-primary{
+    border-color: $primary-color;
+    color: $default-color;
+    background-color: $primary-color;
+    &:hover{
+      color: $primary-color;
+      background-color: transparent;
+    }
+  }
+}

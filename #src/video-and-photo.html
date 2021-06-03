@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC</title>
+    <link rel="stylesheet" href="css/style.min.css">
+<body>
+@@include('_svg_incloud.html')
+
+<div id="wrapper" class="wrapper">
+  <div class="wrapper-header gradient-bg gradient-bg--md">
+    @@include('_header.html')
+    <div class="container">
+      <!-- breadcrumbs -->
+      @@include('_breadcrumbs.html', {
+        'title': 'Фото и видео',
+        'breadcrumbs_lvl1': 'Главная',
+        'breadcrumbs_lvl2': 'Новости',
+        'breadcrumbs_lvl3': 'Фото и видео',
+        'url_lvl1': '/',
+        'url_lvl2': '/news.html'
+      })
+    </div>
+  </div>
+  <div class="wrapper-body wrapper-body--page">
+    
+    <!-- news -->
+    <section class="wrapper-content wrapper-content--detail">
+      <div class="container">
+        
+        <div class="news">
+          <div class="filter news-filter">
+            <div class="filter-selects">
+              <div class="filter-select">
+                <h3 class="filter-select__title title-sm color-secondary">
+                  Год
+                </h3>
+                <div class="filter-select__item select2-news-filter">
+                  <select
+                    name="select2"
+                    id="select2"
+                    class="select2-custom"
+                  >
+                    <option value="2019">2019</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                </select>
+                </div>
+              </div>
+              <div class="filter-select">
+                <h3 class="filter-select__title title-sm color-secondary">
+                  Тип
+                </h3>
+                <div class="filter-select__item select2-news-filter">
+                  <select
+                    name="select2-1"
+                    id="select2-1"
+                    class="select2-custom"
+                  >
+                    <option value="Фото">Фото</option>
+                    <option value="Видео">Видео</option>
+                    <option value="Новости">Новости</option>
+                    <option value="Фото">Фото</option>
+                    <option value="Видео">Видео</option>
+                    <option value="Новости">Новости</option>
+                </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-wrap">
+            <div class="cards">
+              <div class="card">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/photo/1.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    7 января 2021 г.
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    ФИНАЛ «КВН ВОИ – 2020»
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Смотреть
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/photo/2.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    2 декабря 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Небо, открытое для всех
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Смотреть
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/photo/3.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    28 ноября 2020 г.
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Фото с полумарафона
+                    «Рецепт-спорт 2020»
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Смотреть
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/photo/4.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    27 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    VI Международный фестиваль на спортивных колясках Рецепт-Спорт
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Смотреть
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/photo/5.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 октября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Фото с фестиваля по спортивному туризму «Юрюзань»
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Смотреть
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/photo/6.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    28 ноября 2020 г.
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Итоговый фильм о фестивале «ПАРА-КРЫМ 2020»
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Смотреть
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/photo/4.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    27 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    VI Международный фестиваль на спортивных колясках Рецепт-Спорт
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Смотреть
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/photo/5.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 октября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Фото с фестиваля по спортивному туризму «Юрюзань»
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Смотреть
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/photo/6.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    28 ноября 2020 г.
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Итоговый фильм о фестивале «ПАРА-КРЫМ 2020»
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Смотреть
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @@include('_pagging.html')
+      </div>
+    </section>
+  </div>
+
+  @@include('_footer.html')
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

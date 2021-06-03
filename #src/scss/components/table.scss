@@ -1,0 +1,94 @@
+// table .table
+.table-widht--fixed{
+  & table:not([class]) {
+    table-layout: fixed;
+  }
+}
+.table-scroll{
+  @media(max-width:$smDesktopWidth) {
+    overflow-x: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: $light-color;
+    @include scrollBarOff;
+    & table:not([class]) {
+      table-layout: auto;
+    }
+    & td,th{
+      min-width: 220px;
+    }
+  }
+}
+table:not([class]){
+  width: 100%;
+  table-layout: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  
+  & td,th{
+    max-width: 420px;
+    padding: 12px;
+    &:first-child{
+      padding-left: 31px;
+      padding-right: 50px;
+      @media(max-width: $smDesktopWidth) {
+        padding-left: 16px;
+        padding-right: 20px;
+      }
+    }
+    &:last-child{
+      padding-right: 31px;
+      @media(max-width: $smDesktopWidth) {
+        padding-right: 16px;
+      }
+    }
+  }
+  tbody{
+    & tr{
+      &:nth-child(odd){
+        & td,th{
+          background: #F5F5F5;
+        }
+      }
+    }
+  }
+  thead{
+    td,th{
+      background-color: $primary-color;
+      color: $default-color;
+    }
+    & + tbody{
+      & tr{
+        &:nth-child(odd){
+          & td,th{
+            background: $default-color;
+          }
+        }
+        &:nth-child(even){
+          & td,th{
+            background: #F5F5F5;
+          }
+        }
+      }
+    }
+  }
+  a:not([class]) {
+    color: $primary-color;
+    @include hoverPrimaryAfterLink;
+  }
+}
+
+.wrapper-table{
+
+  // .wrapper-table--mb-120
+  &--mb-120{
+    margin-bottom: 120px;
+    @media(max-width: $smDesktopWidth) {
+      margin-bottom: 40px;
+    }
+    @media(max-width: $tableWidth) {
+      margin-bottom: 24px;
+    }
+  }
+}

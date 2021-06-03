@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC</title>
+    <link rel="stylesheet" href="css/style.min.css">
+<body>
+@@include('_svg_incloud.html')
+
+<div id="wrapper" class="wrapper">
+  <div class="wrapper-header gradient-bg gradient-bg--md">
+    @@include('_header.html')
+    <!-- breadcrumbs -->
+    <div class="container">
+      @@include('_breadcrumbs.html', {
+        'title': 'Новости',
+        'breadcrumbs_lvl1': 'Главная',
+        'breadcrumbs_lvl2': 'Новости',
+        'breadcrumbs_lvl3': 'Все новости',
+        'url_lvl1': '/',
+        'url_lvl2': '/news.html'
+      })
+    </div>
+  </div>
+  <div class="wrapper-body wrapper-body--page">
+    
+    <!-- news -->
+    <section class="wrapper-content wrapper-content--detail">
+      <div class="container">
+        
+        <div class="news">
+          <div class="filter news-filter">
+            <input
+              type="text"
+              class="filter-input input input-search input-xl"
+              name="filter-input"
+              id="filter-input"
+              placeholder="Поиск новостей"
+            >
+            <div class="filter-categories">
+              <div class="filter-categories__item">
+                <input
+                  type="radio"
+                  class="filter-categories__inp"
+                  name="filter-categories__001"
+                  id="filter-categories__001"
+                  checked
+                >
+                <label
+                  for="filter-categories__001"
+                  class="filter-categories__lbl color-main link title-xsm"
+                >
+                  Все новости
+                </label>
+              </div>
+              <div class="filter-categories__item">
+                <input
+                  type="radio"
+                  class="filter-categories__inp"
+                  name="filter-categories__001"
+                  id="filter-categories__002"
+                >
+                <label
+                  for="filter-categories__002"
+                  class="filter-categories__lbl color-main link title-xsm"
+                >
+                  Главные новости
+                </label>
+              </div>
+              <div class="filter-categories__item">
+                <input
+                  type="radio"
+                  class="filter-categories__inp"
+                  name="filter-categories__001"
+                  id="filter-categories__003"
+                >
+                <label
+                  for="filter-categories__003"
+                  class="filter-categories__lbl color-main link title-xsm"
+                >
+                  Региональные новости
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="cards-wrap">
+            <div class="cards">
+              <div class="card">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/news/news-card/1.png');"
+                >
+                  <span class="card-post__type text-nr color-default">
+                    Наша позиция
+                  </span>
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-nr color-main">
+                    Почта России и ВОИ объединят усилия для развития инклюзивной среды
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/news/news-card/2.png');"
+                >
+                  <span class="card-post__type text-nr color-default">
+                    Региональные новости
+                  </span>
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Гран-при областного фестиваля КВН получила команда "Единые" из Заводоуковска
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/news/news-card/3.png');"
+                >
+                  <span class="card-post__type text-nr color-default">
+                    Наша позиция
+                  </span>
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Гран-при областного фестиваля КВН получила команда "Единые" из Заводоуковска
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/news/news-card/1.png');"
+                >
+                  <span class="card-post__type text-nr color-default">
+                    Наша позиция
+                  </span>
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-nr color-main">
+                    Почта России и ВОИ объединят усилия для развития инклюзивной среды
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/news/news-card/2.png');"
+                >
+                  <span class="card-post__type text-nr color-default">
+                    Региональные новости
+                  </span>
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Гран-при областного фестиваля КВН получила команда "Единые" из Заводоуковска
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/news/news-card/3.png');"
+                >
+                  <span class="card-post__type text-nr color-default">
+                    Наша позиция
+                  </span>
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Гран-при областного фестиваля КВН получила команда "Единые" из Заводоуковска
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/news/news-card/1.png');"
+                >
+                  <span class="card-post__type text-nr color-default">
+                    Наша позиция
+                  </span>
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-nr color-main">
+                    Почта России и ВОИ объединят усилия для развития инклюзивной среды
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/news/news-card/2.png');"
+                >
+                  <span class="card-post__type text-nr color-default">
+                    Региональные новости
+                  </span>
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Гран-при областного фестиваля КВН получила команда "Единые" из Заводоуковска
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/news/news-card/3.png');"
+                >
+                  <span class="card-post__type text-nr color-default">
+                    Наша позиция
+                  </span>
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    17 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-sm color-main">
+                    Гран-при областного фестиваля КВН получила команда "Единые" из Заводоуковска
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Подробнее
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @@include('_pagging.html')
+      </div>
+    </section>
+  </div>
+
+  @@include('_footer.html')
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

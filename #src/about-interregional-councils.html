@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC</title>
+    <link rel="stylesheet" href="css/style.min.css">
+<body>
+@@include('_svg_incloud.html')
+
+<div id="wrapper" class="wrapper">
+
+  <div class="wrapper-header gradient-bg gradient-bg--md">
+    @@include('_header.html')
+    <div class="container">
+      @@include('_breadcrumbs.html', {
+        'title': 'Межрегиональные советы',
+        'breadcrumbs_lvl1': 'Главная',
+        'breadcrumbs_lvl2': 'О нас',
+        'breadcrumbs_lvl3': 'Межрегиональные советы',
+        'url_lvl1': '/',
+        'url_lvl2': '/about.html'
+      })
+    </div>
+  </div>
+  <div class="wrapper-body wrapper-body--page">
+    <section class="wrapper-content wrapper-content--detail wrapper-content--mb-80">
+      <div class="container">
+        <div class="detail-content">
+          <p>
+            <strong>
+              Межрегиональные советы организаций (МРС) ВОИ создаются как совещательные органы по решению Центрального правления из числа председателей региональных организаций ВОИ с целью обеспечения оперативной взаимосвязи президиума Центрального правления ВОИ и региональных организаций.
+            </strong>
+          </p>
+        </div>
+        <div class="detail-content">
+          <div class="links-flex">
+            <div class="links-item">
+              <a href="#" class="link-primary title-xsm">
+                Дальневосточный Межрегиональный совет
+              </a>
+            </div>
+            <div class="links-item">
+              <a href="#" class="link-primary title-xsm">
+                Уральский Межрегиональный совет
+              </a>
+            </div>
+            <div class="links-item">
+              <a href="#" class="link-primary title-xsm">
+                Приволжский Межрегиональный совет
+              </a>
+            </div>
+            <div class="links-item">
+              <a href="#" class="link-primary title-xsm">
+                Центральный Межрегиональный совет
+              </a>
+            </div>
+            <div class="links-item">
+              <a href="#" class="link-primary title-xsm">
+                Северо-Западный Межрегиональный совет
+              </a>
+            </div>
+            <div class="links-item">
+              <a href="#" class="link-primary title-xsm">
+                Южный Межрегиональный совет
+              </a>
+            </div>
+            <div class="links-item">
+              <a href="#" class="link-primary title-xsm">
+                Сибирский Межрегиональный совет
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  @@include('_footer.html')
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

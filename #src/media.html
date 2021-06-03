@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOC</title>
+    <link rel="stylesheet" href="css/style.min.css">
+<body>
+@@include('_svg_incloud.html')
+
+<div id="wrapper" class="wrapper">
+  <div class="wrapper-header gradient-bg gradient-bg--md">
+    @@include('_header.html')
+    <div class="container">
+      <!-- breadcrumbs -->
+      @@include('_breadcrumbs.html', {
+        'title': 'СМИ о нас',
+        'breadcrumbs_lvl1': 'Главная',
+        'breadcrumbs_lvl2': 'Новости',
+        'breadcrumbs_lvl3': 'СМИ о нас',
+        'url_lvl1': '/',
+        'url_lvl2': '/news.html'
+      })
+    </div>
+  </div>
+  <div class="wrapper-body wrapper-body--page">
+    
+    <!-- news -->
+    <section class="wrapper-content wrapper-content--detail">
+      <div class="container">
+        <div class="news">
+          <div class="cards-wrap">
+            <div class="cards">
+              <div class="card">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/media/1.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    26 мая 2020
+                  </time>
+                  <h3 class="card-info__title title-nr color-main">
+                    В России стартовал фотоконкурс о жизни инвалидов "Без барьеров"
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Перейти к источнику
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/media/2.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    23 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-nr color-main">
+                    "Почта России"
+                    и Всероссийское общество инвалидов будут развивать инклюзивную среду
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Перейти к источнику
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/media/3.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    3 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-nr color-main">
+                    По разделительной: Минтранс планирует пересмотреть доступность общественного транспорта для инвалидов
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Перейти к источнику
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                  style="background-image:url('./img/media/4.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    27 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-nr color-main">
+                    В заочном порядке
+                    Инвалидность установят без личного присутствия
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Перейти к источнику
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/media/3.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    3 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-nr color-main">
+                    По разделительной: Минтранс планирует пересмотреть доступность общественного транспорта для инвалидов
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Перейти к источнику
+                  </a>
+                </div>
+              </div>
+              <div class="card d-none-1080">
+                <div class="card-img card-img--lg"
+                      style="background-image:url('./img/media/3.png');"
+                >
+                </div>
+                <div class="card-info">
+                  <time class="card-info__date text-nr color-light">
+                    3 ноября 2020
+                  </time>
+                  <h3 class="card-info__title title-nr color-main">
+                    По разделительной: Минтранс планирует пересмотреть доступность общественного транспорта для инвалидов
+                  </h3>
+                  <a href="#" class="card-info__link text-nr link-primary">
+                    Перейти к источнику
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        @@include('_pagging.html')
+      </div>
+    </section>
+  </div>
+
+  @@include('_footer.html')
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

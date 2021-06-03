@@ -1,0 +1,103 @@
+// .info
+
+.info{
+  list-style: none;
+  counter-reset: section;
+  &.text-lg{
+    @media(max-width: $smDesktopWidth) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  // .info-item
+  &-item{
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(#20201F,0.1);
+    padding-left: 47px;
+    position: relative;
+    &::before{
+      counter-increment: section;
+      content: counters(section,".") '.';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+    &:last-child{
+      @media(min-width: $smDesktopWidth+1){
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: 0;
+      }
+    }
+
+    @media (max-width: $smDesktopWidth) {
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      padding-left: 28px;
+    }
+    // .info-item__txt
+    &__txt{
+      display: flex;
+      @media(max-width: $smDesktopWidth) {
+        color: $light-color;
+      }
+      @media(max-width: $smTableWidth) {
+        display: inline-block;
+      }
+    }
+
+    // .info-item__link
+    &__link{
+      margin-left: 16px;
+      @media(max-width: $smDesktopWidth) {
+        margin-left: 8px;
+      }
+      @media(max-width: $smTableWidth) {
+        margin: 0;
+      }
+    }
+  }
+
+  // .info-item__wrapper
+  &-item__wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+
+    @media(max-width: $smTableWidth) {
+      flex-wrap: wrap;
+    }
+    // .info-item__wrapper-main
+    &-main{
+      width: 100%;
+      flex: 42%;
+      max-width: 42%;
+      padding-right: 30px;
+
+      @media(max-width: $smTableWidth) {
+        max-width: 100%;
+        flex: 100%;
+        padding-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+
+    // .info-item__wrapper-info
+    &-info{
+      width: 100%;
+      flex: 58%;
+      max-width: 58%;
+      display: flex;
+      flex-wrap: nowrap;
+
+      @media(max-width: $smTableWidth) {
+        max-width: 100%;
+        flex: 100%;
+      }
+    }
+
+  }
+}

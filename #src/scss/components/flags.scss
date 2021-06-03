@@ -1,0 +1,78 @@
+// .flags
+
+.flags{
+  @include flexRow;
+  margin-left: -8px;
+  margin-right: -8px;
+  picture{
+    width: auto;
+  }
+
+  // .flags-rov
+  &-rov{
+    @include flexCol-33;
+    padding-left: 8px;
+    padding-right: 8px;
+    @media(max-width: $smDesktopWidth) {
+      @include flexCol-50;
+      margin-bottom: 24px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    @media(max-width: $smTableWidth) {
+      @include flexCol-100;
+    }
+  }
+  & .gap-y-24{
+    .flags-item{
+      margin-bottom: 24px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  & .gap-y-32{
+    .flags-item{
+      margin-bottom: 32px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  // .flags-item
+  &-item{
+    display: flex;
+    align-items: center;
+    &:hover{
+      & .flags-item__txt{
+        &::after{
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+    // .flags-item__txt
+    &__txt{
+      margin-left: 24px;
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 1px;
+        background-color: $primary-color;
+      }
+    }
+
+    // .flags-item__img
+    &__img{
+      width: 48px;
+      height: 32px;
+    }
+  }
+}

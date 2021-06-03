@@ -1,0 +1,43 @@
+/* Vars:
+  ========================================================================== */
+
+// Font
+$mainFont                : 'MPLUS1p', Helvetica, sans-serif;
+$blockquoteFont          : 'OpenSans', Helvetica, sans-serif;
+
+// Size
+$mainFontSize            : 16px;
+$mainFontWeight          : 400;
+$mainLineHeight          : 1.5;
+
+$xlDesktopWidth          : 1900px;
+$lgDesktopWidth          : 1600px;
+$desktopWidth            : 1279px;
+$nrDesktopWidth          : 1199px;
+$smDesktopWidth          : 1080px;
+$nrTableWidth            : 991px;
+$tableWidth              : 767px;
+$smTableWidth            : 640px;
+$phoneWidth              : 475px;
+$smPhoneWidth            : 320px;
+
+
+// Main color
+$default-color           : #ffffff;
+$defaultBlack-color      : #000000;
+$dark-color              : #131312;
+$primaryText-color       : #20201F;
+$secondary-color         : #595958;
+$danger-color            : #D9001D;
+$dangerHover-color       : #EF0F2D;
+$dangerDarker-color      : #EF1010;
+$primary-color           : #006FAC;
+$light-color             : rgba(32, 32, 31, 0.75);
+$extraLight-color        : #A3A3A3;
+
+
+// Border Color
+$border-base             : #D5D5D5;
+$border-light            : #E4E7ED;
+$border-lighter          : #EBEEF5;
+$border-lightex          : #F2F6FC;

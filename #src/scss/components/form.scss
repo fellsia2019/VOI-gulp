@@ -1,0 +1,27 @@
+// form
+
+
+.input{
+  height: 48px;
+  padding: 12px 16px;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: $default-color;
+  transition: all 0.5s ease;
+  &:focus{
+    border: 1px solid #006FAC;
+  }
+  // .input-search
+  &-search{
+    background-position:95% 50%;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-image:url('../img/svg/search.svg');
+  }
+  // .input-xl
+  &-xl{
+    width: 430px;
+    max-width: 100%;
+  }
+}

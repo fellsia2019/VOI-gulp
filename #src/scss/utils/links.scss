@@ -1,0 +1,56 @@
+// links
+
+.action-link{
+  display: inline-flex;
+  align-items: center;
+  & svg{
+    margin-right: 12px;
+  }
+}
+.link{
+  cursor: pointer;
+  @include hoverLink;
+}
+.link-primary{
+  cursor: pointer;
+  color: $primary-color;
+  @include hoverPrimaryAfterLink
+}
+.link-danger{
+  cursor: pointer;
+  color: $danger-color;
+  @include hoverPrimaryAfterLinkDanger
+}
+.link-local{
+  cursor: pointer;
+  display: inline-flex;
+  @include hoverLink;
+  &:hover{
+    .link-local__svg{
+      fill: $primary-color
+    }
+  }
+  // .link-local__svg
+  &__svg{
+    fill: $light-color;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+  }
+}
+
+.links-flex{
+  @include flexRow;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -16px;
+  margin-bottom: -16px;
+}
+.links-item{
+  padding: 16px 15px;
+  @include flexCol-50;
+  @media(max-width: $tableWidth) {
+    @include flexCol-100;
+  }
+}

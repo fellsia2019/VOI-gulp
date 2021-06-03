@@ -1,0 +1,11 @@
+// .load-more
+
+.load-more{
+
+  // .load-more__btn
+  &__btn{
+    @media(max-width: $smTableWidth) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+// .list-achievements
+
+
+.list-achievements {
+  
+  // .list-achievements__item
+
+  &__item {
+    padding-left: 48px;
+    position: relative;
+    margin-bottom: 32px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &::before{
+      content:"";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url("../img/svg/check.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 32px;
+      height: 32px;
+    }
+
+    @media(max-width: $tableWidth){
+      padding-left: 40px;
+      margin-bottom: 24px;
+      &::before{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  // .list-achievements__title
+
+  &__title {
+    margin-bottom: 16px;
+    @media(max-width: $tableWidth){
+      margin-bottom: 12px;
+    }
+  }
+
+  // .list-achievements__txt
+
+  &__txt {
+  }
+}

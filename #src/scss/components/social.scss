@@ -1,0 +1,27 @@
+// .social
+.social{
+  display: flex;
+  align-items: center;
+  // .social-link
+  &-link{
+    margin-right: 16px;
+    height: 24px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  // .social-link__svg
+  &-link__svg{
+    width: 24px;
+    height: 24px;
+    transition: all 0.5s ease;
+    fill: $default-color;
+    background-color: $primary-color;
+    border-radius: 5px;
+    border: 1px solid $primary-color;
+    &:hover{
+      fill: $primary-color;
+      background-color: $default-color;
+    }
+  }
+}

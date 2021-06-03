@@ -1,0 +1,20 @@
+.detail-content{
+  margin: 40px 0;
+  @media(max-width: $smDesktopWidth) {
+    margin: 32px 0;
+  }
+  @media(max-width: $smTableWidth) {
+    margin: 24px 0;
+  }
+
+  // .detail-content--mt-64
+  &--mt-64{
+    margin: 64px 0;
+      @media(max-width: $smDesktopWidth) {
+        margin: 40px 0;
+      }
+      @media(max-width: $smTableWidth) {
+        margin: 24px 0;
+      }
+  }
+}

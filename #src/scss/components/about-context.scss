@@ -1,0 +1,91 @@
+// .about-context
+
+.about-context{
+
+  // .about-context--row
+  &--row{
+    @include flexRow;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+
+  // .about-context__col-50
+  &__col-50{
+    @include flexCol-50;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media(max-width: $nrTableWidth) {
+      @include flexCol-100;
+      margin-bottom: 51px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    @media(max-width: $smTableWidth) {
+     margin-bottom: 40px;
+    }
+  }
+  // .about-context__title
+  &__title{
+    margin-bottom: 24px;
+    @media(max-width: $nrTableWidth) {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    @media(max-width: $smTableWidth) {
+      margin-bottom: 16px;
+    }
+    // .about-context__title--mb-40
+    &--mb-40{
+      margin-bottom: 40px;
+      @media(max-width: $smDesktopWidth) {
+        margin-bottom: 24px;
+      }
+      @media(max-width: $smTableWidth) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  // .about-context__text
+  &__text{
+    margin-bottom: 24px;
+    @media(max-width: $smTableWidth) {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  // .about-context__txt
+  &__txt{
+    margin-bottom: 24px;
+    @media(max-width: $nrTableWidth) {
+      margin-bottom: 16px;
+    }
+  }
+
+  // .about-context__subtitle
+  &__subtitle{
+    margin-bottom: 16px;
+    @media(max-width: $smTableWidth) {
+      margin-bottom: 34px;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  // .about-context__list-achievements
+  &__list-achievements{
+    margin-bottom: 24px;
+    @media(max-width: $nrTableWidth) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // .about-context__img
+  &__img{
+    width: 100%;
+  }
+}

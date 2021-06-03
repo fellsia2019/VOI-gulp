@@ -1,0 +1,16 @@
+// .video
+
+.video{
+
+  // .video-title
+  &-title{
+    margin-bottom: 42px;
+    @media(max-width: $smDesktopWidth) {
+      margin-bottom: 48px;
+    }
+    @media(max-width: $tableWidth) {
+      margin-bottom: 44px;
+    }
+  }
+
+}

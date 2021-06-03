@@ -1,0 +1,72 @@
+// .pagging
+
+.pagging{
+
+  @media(max-width: $smTableWidth) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    & .pagging-list{
+      justify-content: space-between;
+    }
+  }
+  // .pagging--mt-40
+  &--mt-40{
+    margin-top: 40px;
+  }
+
+  // .pagging-center
+  &-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  // .pagging-list
+  &-list{
+    display: flex;
+    align-items: center;
+    
+    // .pagging-list__item
+    &__item{
+      margin-right: 24px;
+      button{
+        color: $extraLight-color;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &.pagging-list__item--curent{
+        button{
+          color:$dark-color;
+        }
+      }
+    }
+  }
+
+  // .pagging-arr
+  &-arr{
+
+    display: inline-block;
+    width: 8px;
+    height: 32px;
+    background-size: 8px 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    
+    // .pagging-arr--next
+    &--next{
+      background-image: url("../img/svg/arr-right.svg");
+      margin-left: 24px;
+    }
+
+    // .pagging-arr--prev
+    &--prev{
+      background-image: url("../img/svg/arr-right.svg");
+      transform: rotate(180deg);
+      margin-right: 24px;
+    }
+  }
+}

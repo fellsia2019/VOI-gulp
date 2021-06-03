@@ -1,0 +1,151 @@
+// .gradient-bg
+
+.gradient-bg{
+  // .gradient-bg--md
+  &--md{
+    &::before{
+      background-size:1245px 420px;
+      height: 420px;
+
+      @media(max-width: $desktopWidth) {
+        background-size: cover;
+        width: 77.5vw;
+      }
+      @media(max-width: $smDesktopWidth) {
+        background-size: cover;
+        height: calc(100% + 24px);
+        width: 77.5vw;
+      }
+      @media(max-width: $tableWidth) {
+        background-size: cover;
+        width: 100%;
+      }
+    }
+  }
+
+  // .gradient-bg--xl
+  &--xl{
+    &::before{
+      background-size:1245px 740px;
+      height: 740px;
+
+      @media(max-width: $desktopWidth) {
+        background-size: cover;
+        height: calc(100% - 271px);
+        width: 77.5vw;
+      }
+      @media(max-width: $tableWidth) {
+        background-size: cover;
+        height: 664px;
+        width: 100%;
+      }
+      @media(max-width: $smTableWidth) {
+        background-size: cover;
+        height: calc(100% + 24px);
+        width: 100%;
+      }
+    }
+  }
+
+   // .gradient-bg--lg
+   &--lg{
+    &::before{
+      background-size:1245px 540px;
+      height: 540px;
+
+      @media(max-width: $desktopWidth) {
+        background-size: cover;
+        height: calc(100% + 24px);
+        width: 77.5vw;
+      }
+      @media(max-width: $smDesktopWidth) {
+        height: 100%;
+      }
+      @media(max-width: $tableWidth) {
+        background-size: cover;
+        width: 100%;
+        height: 64px;
+      }
+      @media(max-width: $smTableWidth) {
+        background-size: cover;
+        width: 100%;
+
+      }
+    }
+    // .gradient-bg--lg-intro
+    &-intro{
+      &::before{
+        background-size:1245px 540px;
+        height: 540px;
+  
+        @media(max-width: $desktopWidth) {
+          background-size: cover;
+          height: calc(100% + 24px);
+          width: 77.5vw;
+        }
+        @media(max-width: $smDesktopWidth) {
+          height: calc(100% - 270px);
+        }
+        @media(max-width: $tableWidth) {
+          background-size: cover;
+          width: 100%;
+        }
+        @media(max-width: $smTableWidth) {
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      // .gradient-bg--lg-intro-img
+      &-img{
+        &::before{
+          @media(max-width: $desktopWidth) {
+            background-size: cover;
+            height: 100%;
+            width: 77.5vw;
+          }
+          @media(max-width: $smDesktopWidth) {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+  position: relative;
+  &::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(63.51deg, #FDE6D4 0%, #EFF1EA 48.9%, #E4FAFA 100%);
+    background-position: top left;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+// .gradient-blue
+.gradient-blue{
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E8F7F4 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// .gradient-blue-events
+.gradient-blue-events{
+  background: linear-gradient(180deg, #FFFFFF 0%, #E8F7F4 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gradient-blue-news{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 0.01%, #E8F7F4 68.75%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

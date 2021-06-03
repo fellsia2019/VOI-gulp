@@ -1,0 +1,48 @@
+// svg
+
+.svg{
+
+  // .svg-eye
+  &-eye{
+    width: 24px;
+    height: 24px;
+    @media(max-width: $smDesktopWidth) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  // .svg-login
+  &-login{
+    width: 24px;
+    height: 24px;
+    @media(max-width: $smDesktopWidth) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  // .svg-search
+  &-search{
+    width: 24px;
+    height: 24px;
+    @media(max-width: $smDesktopWidth) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.search{
+  height: 24px;
+  @media(max-width: $smDesktopWidth) {
+    height: 32px;
+  }
+}
+
+.arr-up{
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  transition: all 0.5s ease;
+}

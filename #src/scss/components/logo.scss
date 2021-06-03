@@ -1,0 +1,29 @@
+// .logo
+.logo{
+  display: inline-flex;
+  align-items: flex-end;
+  &:hover{
+    & .logo-img{
+    }
+    & .logo-txt{
+    }
+  }
+  // .logo-img
+  &-img{
+    height: 80px;
+    margin-right: 15px;
+    transition: all 0.5s ease;
+  }
+
+  // .logo-txt
+  &-txt{
+    font-family: Corinthia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 24px;
+    color: #D9001D;
+    width: 170px;
+    transition: all 0.5s ease;
+  }
+}

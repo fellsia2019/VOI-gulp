@@ -1,0 +1,15 @@
+// .projects
+
+.projects{
+
+  // .projects-title
+  &-title{
+    margin-bottom: 96px;
+    @media(max-width: $smDesktopWidth){
+      margin-bottom: 62px;
+    }
+    @media(max-width: $tableWidth){
+      margin-bottom: 24px;
+    }
+  }
+}

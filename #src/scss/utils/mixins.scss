@@ -1,0 +1,124 @@
+/* Mixins:
+  ========================================================================== */
+
+@mixin scrollBarOff {
+  &::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:0;
+    height:0
+  }
+  &::-webkit-scrollbar-track {
+    background-color:transparent
+    }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color:transparent
+  }
+
+  &::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:0;
+    height:0
+  }
+
+  &::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+  }
+}
+
+@mixin shadowBox {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.12);
+}
+@mixin hoverLink {
+  transition: all 0.5s ease;
+  cursor: pointer;
+  * {
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  &:hover{
+    color: $primary-color;
+    * {
+      color: $primary-color;
+     
+    }
+  }
+}
+@mixin hoverPrimaryAfterLink{
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 1px;
+    background-color: $primary-color;
+  }
+  &:hover{
+    &::after{
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
+
+@mixin hoverPrimaryAfterLinkDanger{
+  position: relative;
+  transition: all 0.5s ease;
+
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 1px;
+    background-color: $danger-color;
+  }
+  &:hover{
+    &::after{
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
+
+@mixin flexRow{
+  display: flex;
+  flex-wrap: wrap;
+}
+@mixin flexCol-100{
+  width: 100%;
+  flex: 100%;
+  max-width: 100%;
+}
+@mixin flexCol-50{
+  width: 100%;
+  flex: 50%;
+  max-width: 50%;
+}
+
+@mixin flexCol-60{
+  width: 100%;
+  flex: 60%;
+  max-width: 60%;
+}
+@mixin flexCol-40{
+  width: 100%;
+  flex: 40%;
+  max-width: 40%;
+}
+@mixin flexCol-33{
+  width: 100%;
+  flex: calc(100% / 3);
+  max-width: calc(100% / 3);
+}

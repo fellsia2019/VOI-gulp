@@ -1,0 +1,75 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+// libs
+@import "./utils/libs";
+
+// utils
+@import "./utils/fonts";
+@import "./utils/reset";
+@import "./utils/anim";
+@import "./utils/mixins";
+@import "./utils/vars";
+@import "./utils/container";
+@import "./utils/font-styles";
+@import "./utils/links";
+@import "./utils/btn";
+@import "./utils/svg";
+@import "./utils/psevdo-styles";
+
+
+// UI
+@import "./UI/header";
+@import "./UI/footer";
+
+
+// components
+@import "./components/logo";
+@import "./components/gradient";
+@import "./components/social";
+@import "./components/nav";
+@import "./components/intro";
+@import "./components/list-achievements";
+@import "./components/helper";
+@import "./components/events";
+@import "./components/card";
+@import "./components/infos";
+@import "./components/news";
+@import "./components/projects";
+@import "./components/video";
+@import "./components/load-more";
+@import "./components/breadcrumbs";
+@import "./components/form";
+@import "./components/filter";
+@import "./components/pagging";
+@import "./components/select2";
+@import "./components/slider-photo";
+@import "./components/detail-content";
+@import "./components/download-list";
+@import "./components/photo-gallery";
+@import "./components/modal";
+@import "./components/video-frame";
+@import "./components/calendar";
+@import "./components/separator";
+@import "./components/events-info";
+@import "./components/about-intro";
+@import "./components/about-info";
+@import "./components/about-context";
+@import "./components/flags";
+@import "./components/regional-organizations";
+@import "./components/table";
+@import "./components/person-detail";
+@import "./components/person-cards";
+@import "./components/tab";
+@import "./components/info";
+
+
+
+
