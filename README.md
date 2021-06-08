@@ -1,10 +1,20 @@
-# VOI-gulp
-
-Project on Node.js GULP
-
-Install dependencies ---
-npm i
+# Всероссийское Общество Инвалидов
+<p align="left">
+  <img src="https://github.com/fellsia2019/VOI-dist/blob/master/img/logo/logo.png" width="150" title="hover text">
+</p>
 
 
-start ---
-gulp
+### Сборка проекта выполнена на таск-менеджере Gulp
+
+Для запуска проекта убедитесь что у Вас установлен __Node.js__ 12-й версии или выше **(для linux, mac)**,  14-й или выше для **(win10)**. <br/>
+`node -v` - покажет вашу версию __Node.js__ <br/>
+
+### Запуск проекта ###
+
+1. Установка зависимостей. <br/>
+   `npm i`
+2. Запус проекта. <br/>
+   `npm start` <br/>
+
+
+Если Вам не нужен watcher, тогда используйте команду только для сборки проекта `npm build`
