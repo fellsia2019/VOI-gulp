@@ -1,8 +1,8 @@
 // .helper
 .helper{
 
-  // .helper-title
-  &-title{
+  // .helper__title
+  &__title{
     margin-bottom: 35px;
 
     @media(max-width: $smDesktopWidth) {
@@ -13,16 +13,16 @@
     }
   }
 
-  // .helper-wrap
-  &-wrap{
-    // .helper-wrap--mb-56
+  // .helper__wrap
+  &__wrap{
+    // .helper__wrap--mb-56
     &--mb-56{
       margin-bottom: 56px;
     }
   }
 
-  // .helper-items
-  &-items{
+  // .helper__wrap-items
+  &__wrap-items{
     @include flexRow;
     margin-left: -15px;
     margin-right: -15px;

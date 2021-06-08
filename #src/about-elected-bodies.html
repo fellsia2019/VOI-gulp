@@ -10,7 +10,7 @@
 
 <div id="wrapper" class="wrapper">
 
-  <div class="wrapper-header gradient-bg gradient-bg--md">
+  <div class="wrapper-header gradient-bg gradient-bg--md" data-js="wrapper-header">
     @@include('_header.html')
     <div class="container">
       @@include('_breadcrumbs.html', {
@@ -80,7 +80,11 @@
                 Стал лауреатом Государственной премии Российской Федерации за выдающиеся достижения в области правозащитной деятельности 2018 года.
               </p>
             </div>
-            <button type="button" class="person-detail__btn title-xsm link-primary btn-show-info">
+            <button
+              type="button"
+              class="person-detail__btn title-xsm link-primary "
+              data-js="btn-show-info"
+            >
               <p class="person-detail__btn-short fade">
                 Читать дальше
               </p>
