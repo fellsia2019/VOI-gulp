@@ -1,10 +1,9 @@
+const project_folder= "app";
+const source_folder="#src";
 
-let project_folder= "app";
-let source_folder="#src";
+const fs = require ('fs');
 
-let fs = require ('fs');
-
-let path={
+const path={
     build:{
         html:project_folder+"/",
         css: project_folder+"/css/",
@@ -32,7 +31,7 @@ let path={
 
 }
 
-let{src,dest} = require('gulp'),
+const{src,dest} = require('gulp'),
     gulp = require('gulp'),
     browsersync = require("browser-sync").create(),
     fileinclude = require("gulp-file-include"),
@@ -158,27 +157,31 @@ function fonts() {
 };
 
 
-gulp.task('otf2ttf', function(){
+const otf2ttf = () => {
     return src([source_folder + '/fonts/*.otf'])
         .pipe(fonter({
             formats: ['ttf']
         }))
         .pipe(dest(source_folder + '/fonts/'));
-})
+};
 
-gulp.task('svgSprite', function(){
+exports.otf2ttf = otf2ttf;
+
+const svgSprites = () => {
     return gulp.src([source_folder + '/iconsprite/*.svg'])
-        .pipe(svgSprite({
-            mode: {
-                stack: {
-                    sprite: "../icons/icons.svg",
-                    example: true
-                }
-            },
-        }
-        ))
-        .pipe(dest(path.build.img))
-})
+    .pipe(svgSprite({
+        mode: {
+            stack: {
+                sprite: "../icons/icons.svg",
+                example: true
+            }
+        },
+    }
+    ))
+    .pipe(dest(path.build.img))
+  };
+
+exports.svgSprites = svgSprites;
 
 function fontsStyle(params) {
 
@@ -199,7 +202,7 @@ function fontsStyle(params) {
                 }
             })
         }
-    }
+}
 function cb(){
 
 }
@@ -216,8 +219,8 @@ function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, videos), fontsStyle);
-let watch = gulp.parallel(build, watchFiles, browserSync,fontsStyle,images, videos);
+const build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, videos), fontsStyle);
+const watch = gulp.parallel(build, watchFiles, browserSync,fontsStyle,images, videos);
 
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;

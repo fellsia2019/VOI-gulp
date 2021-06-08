@@ -1,6 +1,6 @@
-let slick_partner = document.querySelectorAll(".partners-slider"),
-    slider_photo_vertical = document.querySelectorAll(".slider-photo__vertical"),
-    slider_photo_main = document.querySelectorAll(".slider-photo__main");
+const slick_partner = document.querySelectorAll('[data-js="btn-show-info"]'),
+    slider_photo_vertical = document.querySelectorAll('[data-js="slider-photo-vertical"]'),
+    slider_photo_main = document.querySelectorAll('[data-js="slider-photo-main"]');
 
 if (slick_partner != null) {
   $(slick_partner).slick({

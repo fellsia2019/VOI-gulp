@@ -50,6 +50,14 @@
       margin-bottom: 20px;
     }
 
+    // .intro-info__list-achievements
+
+    &__list-achievements {
+      padding-right: 27px;
+      @media (max-width: $smDesktopWidth) {
+        padding-right: 0;
+      }
+    }
     // .intro-info--none-img
     &--none-img{
       width: 100%;
@@ -77,20 +85,21 @@
         max-width: unset;
       }
     }
+    // .intro-info__title
+    &__title{
+      margin-bottom: 40px;
+
+      @media (max-width: $smDesktopWidth) {
+        margin-bottom: 32px;
+
+      }
+      @media (max-width: $tableWidth) {
+        margin-bottom: 24px;
+      }
+    }
   }
 
-  // .intro-title
-  &-title{
-    margin-bottom: 40px;
-
-    @media (max-width: $smDesktopWidth) {
-      margin-bottom: 32px;
-      
-    }
-    @media (max-width: $tableWidth) {
-      margin-bottom: 24px;
-    }
-  }
+  
 
   // .intro-img
   &-img{
@@ -140,17 +149,6 @@
       @media (max-width: $nrDesktopWidth) {
         height: calc((100vw - 600px) / 2);
       }
-    }
-  }
-}
-.intro-title {
-
-  // .intro-title__list-achievements
-
-  &__list-achievements {
-    padding-right: 27px;
-    @media (max-width: $smDesktopWidth) {
-      padding-right: 0;
     }
   }
 }
